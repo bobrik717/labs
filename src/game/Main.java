@@ -28,6 +28,7 @@ public class Main {
                 }
                 count--;
             }else{
+                sc.nextLine();
                 System.out.println("Must be numeric");
                 count--;
             }
