@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         /*int[]  m = new int[3];
@@ -14,18 +16,28 @@ public class Main {
         };               
         
         String[] names = {"Dan","Bob","Volandemort","Andi"};
+        String[] names2;
         
         for (int i = 0; i < m.length; i++) {
-            System.out.println(m[i]*2);
+            //System.out.println(m[i]*2);
         }
         for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
         }
+        Arrays.sort(names);
+        names2 = Arrays.copyOfRange(names, 1,3);
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
+        System.out.println("names2");
+        for(String s: names2){
+            System.out.println(s);
+        }
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                System.out.printf("%2d",matrix[i][j]);
+                //System.out.printf("%2d",matrix[i][j]);
             }
-            System.out.println();
+            //System.out.println();
         }
         
     }
